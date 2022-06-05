@@ -46,7 +46,7 @@ class Matrix():
     def inv(self):
         return Matrix([[sym.Rational(((1-2*((i+1)%2))*self.minor(i, j).det()), self.det()) for i in range(len(self.a))] for j in range(len(self.a[0]))])
 
-matA = Matrix([[6,-5,8,4,3,5,7], [9,7,5,2,5,2,4], [7,5,3,7,3,1,1], [-4,8,-8,-3,8,9,5], [3,2,5,6,1,0,6], [1,4,2,6,4,3,3] ])
+matA = Matrix([[6,-5,8,4,3,5,7], [9,7,5,2,5,2,4], [7,5,3,7,3,1,1], [-4,8,-8,-3,8,9,5], [3,2,5,6,1,0,6], [1,4,2,6,4,3,3] ]) #example of matrix 7x7 (you can change it)
 matB = Matrix([[1]*3]*3)
 print(matA)
 print(matA.inv())
